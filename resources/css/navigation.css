@@ -1,0 +1,121 @@
+/* ---------------------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* -----------------------------------------------*/
+/* SECTIONS SETUP */
+/* -----------------------------------------------*/
+
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+section {
+    clear: left;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    height: 1500px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* -----------------------------------------------*/
+/* PAGE SETUP */
+/* -----------------------------------------------*/
+
+.horizontal-nav-3 {
+    position: sticky;
+    top: 100px;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.horizontal-nav-1,
+.horizontal-nav-2,
+.horizontal-nav-3 {
+    background-color: #333;
+    height: 50px;
+    font-family: 'Times New Roman', Calibri;
+    font-size: 110%;
+    margin-bottom: 40px;
+}
+
+.horizontal-nav-1 ul,
+.horizontal-nav-2 ul,
+.horizontal-nav-3 ul {
+    color: white;
+    height: 100%;
+}
+
+.horizontal-nav-1 ul li,
+.horizontal-nav-2 ul li,
+.horizontal-nav-3 ul li {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    align-content: center;
+    
+    /* Vertical Align */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.horizontal-nav-1 ul li a,
+.horizontal-nav-2 ul li a,
+.horizontal-nav-3 ul li a {
+    color: white;
+    text-decoration: none; 
+}
+
+.horizontal-nav-1 ul li:hover:not(.active),
+.horizontal-nav-2 ul li:hover:not(.active),
+.horizontal-nav-3 ul li:hover:not(.active) {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.horizontal-nav-2 ul li:last-child,
+.horizontal-nav-3 ul li:last-child {
+    float: right;
+}
+
+.horizontal-nav-3 ul li {
+    border-right: 1px solid white;
+}
+
+.horizontal-nav-3 ul li:last-child {
+    border: none;
+}
+
+
+

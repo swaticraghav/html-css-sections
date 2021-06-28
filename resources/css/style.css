@@ -343,9 +343,15 @@ section {
 /* ---------------------------------------------- */
 
 .section-navigation {
-    background-color: black;
-    height: 50px;
     font-size: 80%;
+    /* ---
+    display: initial;
+    --- */
+}
+
+.navigation-item {
+    margin-bottom: 30px;
+    background-color: black;
 }
 
 .nav-1,
@@ -373,10 +379,129 @@ section {
     margin: 10px 10px;
 }
 
+.vertical-nav-1 {
+    width: 100%;
+    margin-bottom: 30px;
+    /* ----
+    position: sticky;
+    top: 0;
+    ---- */
+}
+
+.vertical-nav-1 ul {
+    width: 30%;
+    background-color: rgba(169, 169, 169, 0.47);
+    list-style: none;
+    border: 1px solid black;
+
+}
+
+.vertical-nav-1 ul li {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.vertical-nav-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.vertical-nav-1 ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+.active,
+.active-2 {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.vertical-nav-1 ul li a:hover:not(.active) {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.horizontal-nav-1,
+.horizontal-nav-2,
+.horizontal-nav-3 {
+    background-color: rgba(0, 0, 0, 0.79);
+    height: 50px;
+    font-family: 'Times New Roman', Calibri;
+    font-size: 110%;
+    margin-bottom: 40px;
+}
+
+.horizontal-nav-1 ul,
+.horizontal-nav-2 ul,
+.horizontal-nav-3 ul {
+    color: white;
+    height: 100%;
+}
+
+.horizontal-nav-1 ul li,
+.horizontal-nav-2 ul li,
+.horizontal-nav-3 ul li {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    align-content: center;
+    
+    /* Vertical Align */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.horizontal-nav-1 ul li a,
+.horizontal-nav-2 ul li a,
+.horizontal-nav-3 ul li a {
+    color: white;
+    text-decoration: none; 
+}
+
+.horizontal-nav-1 ul li:hover:not(.active),
+.horizontal-nav-2 ul li:hover:not(.active),
+.horizontal-nav-3 ul li:hover:not(.active) {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.horizontal-nav-2 ul li:last-child,
+.horizontal-nav-3 ul li:last-child {
+    float: right;
+}
+
+.horizontal-nav-3 ul li {
+    border-right: 1px solid white;
+}
+
+.horizontal-nav-3 ul li:last-child {
+    border: none;
+}
+
+.iframe-class {
+    width: 70%;
+    margin-left: 15%;
+    height: 350px;
+}
 
 /* ---------------------------------------------- */
 /* SECTION SEVEN */
 /* ---------------------------------------------- */
+
+.section-icon {
+    clear: both;
+}
 
 .icon {
     margin: 0 20px;
@@ -422,6 +547,37 @@ hr {
 .display-paragraph-tag {
     display: inline-block;
     margin-right: 30px;
+}
+
+.display-properties {
+    line-height: 30px;
+    border: 5px double black;
+    background-color: rgba(255, 255, 0, 0.36);
+    padding: 30px;
+    
+}
+
+.inline-words {
+    display: inline;
+    border: 2px solid red;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inline-block-words {
+    display: inline-block;
+    border: 2px solid red;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.block-words {
+    display: block;
+    border: 2px solid red;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 240px;
+    margin-bottom: 20px;
 }
 
 
@@ -562,6 +718,8 @@ blockquote::selection {
     margin: 0 auto;
     height: 350px;
     text-align: center;
+    
+    /* Vertical Align */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -714,3 +872,114 @@ td:hover {
     flex-wrap: nowrap;
 }
 
+
+/* ---------------------------------------------- */
+/* SECTION 17 */
+/* ---------------------------------------------- */
+
+.word-wrap-break {
+    overflow: hidden;
+}
+
+.word-wrap-break div {
+    margin-bottom: 30px;
+}
+
+.word-wrap {
+    border: 2px solid red;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.word-wrap-2 {
+    border: 2px solid red;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+.word-break-1 {
+    border: 2px solid red;
+    width: 140px;
+    height: auto;
+    margin: 0 auto;
+    word-break: normal;
+}
+
+.word-break-2 {
+    border: 2px solid red;
+    width: 140px;
+    height: auto;
+    margin: 0 auto;
+    word-break: keep-all;
+}
+
+.word-break-3 {
+    border: 2px solid red;
+    width: 140px;
+    height: auto;
+    margin: 0 auto;
+    word-break: break-all;
+}
+
+
+/* ---------------------------------------------- */
+/* SECTION 18 */
+/* ---------------------------------------------- */
+
+.gradient-1,
+.gradient-2,
+.gradient-3,
+.gradient-4,
+.gradient-5  {
+    margin-bottom: 50px;
+    height: 200px;
+}
+
+.gradient-1 {
+    background-image: linear-gradient(red, yellow);
+}
+
+.gradient-2 {
+    background-image: linear-gradient(to right , red, yellow);
+}
+
+.gradient-3 {
+    background-image: linear-gradient(to bottom right , red, yellow);
+}
+
+.gradient-4 {
+    background-image: linear-gradient(green , red, yellow);
+}
+
+.gradient-5 {
+    background-image: radial-gradient(red, yellow, black);
+}
+
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+
+#grad2 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
+}
+
+#grad3 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%);
+}
+
+#grad4 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%);
+
+}
