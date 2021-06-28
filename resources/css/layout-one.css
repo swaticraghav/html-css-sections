@@ -1,0 +1,55 @@
+/* -----------------------------------------------*/
+/* BASIC SETUP */
+/* -----------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* -----------------------------------------------*/
+/* PAGE SETUP */
+/* -----------------------------------------------*/
+
+header {
+    background-color: darkgrey;
+    padding: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+section {
+    padding: 30px;
+}
+
+section ul {
+    list-style: none;
+}
+
+section ul li {
+    display: block;
+    background-color: deepskyblue;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+section h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.space-div {
+    height: 20px;
+}
+
+footer {
+    background-color: darkgrey;
+    padding: 30px;
+    color: white;
+}

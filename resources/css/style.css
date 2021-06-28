@@ -1,0 +1,716 @@
+/* ---------------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------------- */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source Sans Pro', Calibri, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section { 
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* ---------------------------------------------- */
+/* SECTION ONE */
+/* ---------------------------------------------- */
+
+.testing-fonts {
+    margin: 20px;
+    background-image: url(css/img/section-1-background.jpg);
+    color: white;
+}
+
+.font-style-two {
+    font-family: 'Playfair Display', Calibri, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.font-style-one, 
+.font-style-two {
+    margin: 20px;
+}
+
+/* ---------------------------------------------- */
+/* SECTION TWO */
+/* ---------------------------------------------- */
+
+.background-one-element, 
+.background-two-element {
+    margin-bottom: 50px;
+}
+
+.background-one-element {
+    background-image: url(css/img/section-2-background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-two-element {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.64)), url(css/img/section-2-background.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-float-test {
+    background-color: aqua;
+}
+
+.image-float-test p {
+    width: 50%;
+    margin: 20px 300px;
+}
+
+.image-float-test img {
+    height: auto;
+    width: 10%;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* image-rows */
+
+.first-row {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.first-row li,
+.second-row li  {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.first-row li figure,
+.second-row li figure {
+    overflow: hidden;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+.first-row li figure img,
+.second-row li figure img {
+    width: 100%;
+    transform: scale(1.5);
+    opacity: 0.8;
+    transition: transform 0.9s;
+}
+
+.first-row li figure img:hover,
+.second-row li figure img:hover {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.second-row {
+    margin: 0 auto;
+}
+
+
+
+/* ---------------------------------------------- */
+/* SECTION THREE */
+/* ---------------------------------------------- */
+
+.position-property {
+    display: initial;
+}
+
+.parent-element {
+    position: relative;
+    background-color: aqua;
+    height: 200px;
+}
+
+.child-element {
+    position: absolute;
+    background-color: black;
+    height: 50px;
+    width: 10%;
+    bottom: 100px;
+    right: 10px;
+    color: white;
+}
+
+.position-relative {
+    background-color: aqua;
+    height: 250px;
+    border: 20px solid black;
+}
+
+.position-relative h3 {
+    position: relative;
+    top: 170px;
+    left: 570px;
+    background-color: darksalmon;
+    width: 30%;
+}
+
+.class-one {
+    position: relative;
+    left: 100px;
+    background-color: mediumvioletred;
+    width: 30%;
+}
+
+.class-two {
+    position: relative;
+    left: 200px;
+    top: 20px;
+    background-color: chartreuse;
+    width: 30%;
+}
+
+.class-three {
+    position: relative;
+    left: 400px;
+    top: 30px;
+    background-color: coral;
+    width: 30%;
+}
+
+.position-fixed {
+    position: fixed;
+    height: auto;
+    width: 190px;
+    right: 0px;
+    top: 0px;
+    background-color: black;
+    color: white;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.index-z {
+    position: relative;
+    margin: 100px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.index-z img {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.image-and-text {
+    position: relative;
+    border: 10px solid black;
+    font-size: 200%;
+}
+
+.image-and-text img {
+    height: 250px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.image-and-text div {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background-color: yellow;
+}
+
+/* ---------------------------------------------- */
+/* SECTION FOUR */
+/* ---------------------------------------------- */
+
+.text-properties {
+    width: 70%;
+    margin: 20px auto;
+    background-color: rgba(239, 239, 115, 0.54);
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 200%;
+    color: firebrick;
+    word-spacing: 20px;
+    line-height: 90px;
+        
+}
+
+/* ---------------------------------------------- */
+/* SECTION FIVE */
+/* ---------------------------------------------- */
+
+.btn {
+    display: inline-block;
+    margin: 14px 20px;
+    text-decoration: none;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Playfair Display', Calibri, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.btn-one:link, 
+.btn-one:visited {
+    border: 5px solid brown;
+    background-color: yellow;
+    transition: border 0.7s, background-color 0.7s;
+}
+
+.btn-two:link, 
+.btn-two:visited {
+    border: 5px double red;
+    background-color: #0ae80a;
+    transition: border 0.7s, background-color 0.7s;
+}
+
+.btn-one:active, 
+.btn-one:hover {
+    border: 10px solid #959548;
+    background-color: #bc82bc;
+}
+
+.btn-two:active, 
+.btn-two:hover {
+    border: 5px double red;
+    background-color: pink;
+    text-transform: uppercase;
+}
+
+.btn-three img {
+    margin: 0 20px;
+    display: inline-block;
+    float: left;
+    width: 10%;
+    height: 100px;
+    border-style: dashed;
+    border-color: forestgreen;
+    transition: border 0.7s;
+}
+
+.btn-three img:hover {
+    border: 10px solid green;
+}
+
+.btn-four:link,
+.btn-four:visited {
+    background-color: burlywood;
+    border: 5px solid red;
+    transition: border 0.5s;
+}
+
+.btn-four:active,
+.btn-four:hover {
+    border: 5px solid transparent;
+}
+
+/* ---------------------------------------------- */
+/* SECTION SIX */
+/* ---------------------------------------------- */
+
+.section-navigation {
+    background-color: black;
+    height: 50px;
+    font-size: 80%;
+}
+
+.nav-1,
+.nav-2 {
+    list-style: none;
+}
+
+.nav-1 a,
+.nav-2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-1 {
+    float: left;
+}
+
+.nav-2 {
+    float: right;
+}
+
+.nav-1 li, 
+.nav-2 li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+
+/* ---------------------------------------------- */
+/* SECTION SEVEN */
+/* ---------------------------------------------- */
+
+.icon {
+    margin: 0 20px;
+    display: inline-block;
+    color: #ff00b1;
+    font-size: 180%;
+}
+
+.icon-two {
+    width: 80%;
+    margin: 0 auto;
+    background-color: darkgray;
+    padding: 30px;
+}
+
+.feature i {
+    width: 70px;
+    font-size: 250%;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.feature p {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+/* ---------------------------------------------- */
+/* SECTION EIGHT */
+/* ---------------------------------------------- */
+
+hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.display-anchor-tag {
+    display: block;
+    text-decoration: none;
+}
+
+.display-paragraph-tag {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+/* ---------------------------------------------- */
+/* SECTION NINE */
+/* ---------------------------------------------- */
+
+.pseudo-one {
+    border: 10px double black;
+    background-color: aqua;
+    padding: 50px;
+}
+
+.pseudo-one:hover {
+    background-color: bisque;
+}
+
+.pseudo-one p {
+    display: block;
+}
+
+.pseudo-one:hover p {
+    display: none;
+}
+
+.team::after {
+    display: block;
+    height: 10px;
+    width: 80%;
+    content: "";
+    background-color: orange;
+    margin: 10px auto;
+}
+
+blockquote {
+    margin: 20px auto;
+    padding-top: 20px;
+    height: auto;
+    padding: 50px;
+    width: 60%;
+    position: relative;
+}
+
+blockquote::before {
+    position: absolute;
+    display: block;
+    font-size: 400%;
+    content: "\201c";
+    top: -4px;
+}
+
+.first-child-one {
+    margin: 20px;
+}
+
+.first-child-one p:first-child {
+    color: blue;
+}
+
+.first-child-one:last-child p:last-child {
+    color: red;
+}
+
+blockquote::first-letter {
+    font-size: 300%;
+}
+
+blockquote::first-line {
+    color: red;
+}
+
+blockquote::selection {
+    background-color: deeppink;
+    color: white;
+}
+
+.child-two ul {
+    margin: 50px;
+}
+
+.child-two ul li::marker {
+    color: #89bf52;
+    font-size: 40px;
+}
+
+
+/* ---------------------------------------------- */
+/* SECTION TEN */
+/* ---------------------------------------------- */
+
+
+.para-one {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 50px;
+    border: 5px solid red;
+    margin-bottom: 20px;
+}
+
+.para-two {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 70px;
+    border: 5px solid red;
+    letter-spacing: 10px;
+}
+
+
+/* ---------------------------------------------- */
+/* SECTION 11 */
+/* ---------------------------------------------- */
+
+.column-layout-div:first-child {
+    color: red;
+}
+
+.column-layout-div:last-child {
+    color: purple;
+}
+
+
+/* ---------------------------------------------- */
+/* SECTION 12 */
+/* ---------------------------------------------- */
+
+
+.align-image {
+    text-align: center;
+}
+
+.align-image img {
+    height: 150px;
+}
+
+.div-align {
+    background-color: aqua;
+    width: 50%;
+    margin: 0 auto;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.align-three {
+    height: 150px;
+    display: block;
+    margin: 10px auto;
+}
+
+.align-four {
+    background-color: bisque;
+    height: 250px;
+    position: relative;
+}
+
+.align-four p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* ---------------------------------------------- */
+/* SECTION 13 */
+/* ---------------------------------------------- */
+
+table, 
+th, 
+td {
+    border: 2px solid red;
+    border-collapse: collapse;
+    transition: background-color 0.5s;
+}
+
+tr {
+    height: 80px;
+    width: auto;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+th:hover,
+td:hover {
+    background-color: burlywood;
+}
+
+/* ---------------------------------------------- */
+/* SECTION 14 */
+/* ---------------------------------------------- */
+
+.overflow-section {
+    margin-bottom: 180px;
+}
+
+.column-specific {
+    height: 150px;
+}
+
+.column-2 {
+    overflow: hidden;
+}
+
+.column-3 {
+    overflow: scroll;
+}
+
+.column-4 {
+    overflow: auto;
+}
+
+.column-5 {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.column-6 {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* ---------------------------------------------- */
+/* SECTION 15 */
+/* ---------------------------------------------- */
+
+.clearfix-1 {
+    float: left;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.clearfix-2 {
+    border: 2px solid green;
+    padding: 10px;
+}
+
+.clearfix-3 {
+    float: left;
+    border: 2px solid #4e00ff;
+    padding: 10px;
+}
+
+.clearfix-4 {
+    border: 2px solid green;
+    padding: 10px;
+    clear: left;
+}
+
+.normal-div, 
+.clearfix-div {
+    border: 2px solid red;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.clearfix-image {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.clearfix-div {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ---------------------------------------------- */
+/* SECTION 16 */
+/* ---------------------------------------------- */
+
+
+.col-individual {
+    border: 2px solid blue;
+    widows: 33%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
