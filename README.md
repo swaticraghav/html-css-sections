@@ -1,4 +1,29 @@
 This project consists of various sections of website - 
 
-- Types of Navigation bars
-- Types of input fields in a form
+- Forms
+- Type of List
+- Meters and Progress
+- Details and Summary
+- Width and Max width
+- Rounded Corner
+- 2d and 3d movements
+- Fonts
+- Images
+- Property - Position
+- Text
+- Buttons and Links
+- Navigation Styles
+- Iframes
+- Icons
+- Property - Display
+- Pseudo classes
+- Paragraph
+- Column Layout
+- Alignment
+- Table
+- Overflowing
+- Float and cleafix
+- Column Layout - equal width and height
+- Word wrap andword break
+- Color gradient
+- Back to top
